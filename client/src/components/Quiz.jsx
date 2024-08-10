@@ -25,7 +25,7 @@ const Quiz = () => {
 useEffect(() => {
   const fetchQuestions = async () => {
     try {
-      const response = await fetch('http://localhost:5000/api/questions');
+      const response = await fetch('https://quiz-application-b2qp.onrender.com/api/questions');
       const data = await response.json();
 
       // Assuming the questions are in the first item of the array
@@ -197,6 +197,8 @@ useEffect(() => {
           <p>Loading questions...</p>
         )
       )}
+
+      
     </div>
   );
 };

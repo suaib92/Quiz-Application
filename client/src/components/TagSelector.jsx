@@ -18,7 +18,7 @@ const TagSelector = () => {
   useEffect(() => {
     const fetchTags = async () => {
       try {
-        const response = await fetch('http://localhost:5000/api/tags');
+        const response = await fetch('https://quiz-application-b2qp.onrender.com/api/tags');
         const data = await response.json();
         dispatch(setTags(data));
       } catch (error) {
